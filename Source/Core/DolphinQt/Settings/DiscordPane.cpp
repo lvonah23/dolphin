@@ -13,6 +13,9 @@
 #include <QVBoxLayout>
 #include <cmath>
 
+#include "DolphinQt/Config/SettingsWindow.h"
+#include "DolphinQt/Settings.h"
+
 DiscordPane::DiscordPane()
 {
 

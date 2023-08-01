@@ -50,6 +50,9 @@ enum class HSPDeviceType : int;
 
 namespace Config
 {
+// Discord.Pane
+extern const Info<std::string> DISCORD_USERNAME;
+
 // Main.Core
 
 extern const Info<bool> MAIN_SKIP_IPL;

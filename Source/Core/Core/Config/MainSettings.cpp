@@ -31,6 +31,9 @@
 
 namespace Config
 {
+// Discord.Settings
+const Info<std::string> DISCORD_USERNAME{{System::Main, "Discord", "Username"}, ""};
+
 // Main.Core
 
 const Info<bool> MAIN_SKIP_IPL{{System::Main, "Core", "SkipIPL"}, true};

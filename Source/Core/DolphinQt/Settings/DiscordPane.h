@@ -2,8 +2,21 @@
 
 #include <QWidget>
 
-class DiscordPane
+class QLineEdit;
+class QVBoxLayout;
+
+class DiscordPane : public QWidget
 {
-  public:
-    explicit DiscordPane();
+public:
+  explicit DiscordPane();
+
+private:
+  void CreateWidgets();
+  void ConnectWidgets();
+
+  void LoadSettings();
+  void SaveSettings();
+
+  QVBoxLayout* m_main_layout;
+  QLineEdit* m_discord_username;
 };

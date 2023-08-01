@@ -18,6 +18,7 @@
 #include "DolphinQt/Settings/InterfacePane.h"
 #include "DolphinQt/Settings/PathPane.h"
 #include "DolphinQt/Settings/WiiPane.h"
+#include "DolphinQt/Settings/DiscordPane.h"
 
 #include "Core/Core.h"
 
@@ -41,6 +42,7 @@ SettingsWindow::SettingsWindow(QWidget* parent) : QDialog(parent)
   m_tab_widget->addTab(GetWrappedWidget(new GameCubePane, this, 125, 100), tr("GameCube"));
   m_tab_widget->addTab(GetWrappedWidget(new WiiPane, this, 125, 100), tr("Wii"));
   m_tab_widget->addTab(GetWrappedWidget(new AdvancedPane, this, 125, 200), tr("Advanced"));
+  m_tab_widget->addTab(GetWrappedWidget(new DiscordPane, this, 125, 200), tr("Discord"));
 
   // Dialog box buttons
   QDialogButtonBox* close_box = new QDialogButtonBox(QDialogButtonBox::Close);
